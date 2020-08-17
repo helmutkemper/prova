@@ -5,5 +5,5 @@ import (
 )
 
 type TestDataSource struct {
-	data []commonData.DataSegment
+	data []commonData.DataFlightStretch
 }

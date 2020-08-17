@@ -8,7 +8,7 @@ import (
 
 func (el *CSV) saveToFile(filePath string) (err error) {
 	var filePointer *os.File
-	var dataSource *[]commonData.DataSegment
+	var dataSource *[]commonData.DataFlightStretch
 
 	filePointer, err = os.OpenFile(filePath, os.O_RDWR|os.O_CREATE, os.ModePerm)
 	if err != nil {

@@ -5,8 +5,8 @@ import (
 	"errors"
 )
 
-func (el *TestDataSource) GetSegmentBySourceIataCode(value string) (data []commonData.DataSegment, err error) {
-	data = make([]commonData.DataSegment, 0)
+func (el *TestDataSource) GetSegmentBySourceIataCode(value string) (data []commonData.DataFlightStretch, err error) {
+	data = make([]commonData.DataFlightStretch, 0)
 
 	for _, line := range el.data {
 		if line.Origin == value {

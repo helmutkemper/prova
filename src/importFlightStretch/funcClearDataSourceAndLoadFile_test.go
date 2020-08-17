@@ -9,7 +9,7 @@ import (
 func ExampleCSV_ClearDataSourceAndLoadFile() {
 	var err error
 	var ds = testDataSource.TestDataSource{}
-	var list []commonData.DataSegment
+	var list []commonData.DataFlightStretch
 
 	var c CSV
 	c.SetFieldSeparator(",")

@@ -12,7 +12,7 @@ func TestProcessOK(t *testing.T) {
 
 	var err error
 	var ds = testDataSource.TestDataSource{}
-	var list []commonData.DataSegment
+	var list []commonData.DataFlightStretch
 
 	var c importFlightStretch.CSV
 	c.SetFieldSeparator(",")

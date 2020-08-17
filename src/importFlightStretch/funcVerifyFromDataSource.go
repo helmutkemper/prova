@@ -9,7 +9,7 @@ import (
 // Procura por erros contidos na fonte de dados, antes da exportação
 func (el *CSV) verifyFromDataSource() (err error) {
 	var errorFoundList []error
-	var dataSource *[]commonData.DataSegment
+	var dataSource *[]commonData.DataFlightStretch
 
 	dataSource, err = el.dataSource.GetAllData()
 	if err != nil {

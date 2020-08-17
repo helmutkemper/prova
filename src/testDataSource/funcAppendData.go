@@ -7,7 +7,7 @@ func (el *TestDataSource) AppendData(source, destination string, price int) {
 		el.ClearAllData()
 	}
 
-	el.data = append(el.data, commonData.DataSegment{
+	el.data = append(el.data, commonData.DataFlightStretch{
 		Origin:      source,
 		Destination: destination,
 		Price:       price,
