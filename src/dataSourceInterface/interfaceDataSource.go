@@ -2,7 +2,7 @@ package dataSourceInterface
 
 import "commonData"
 
-type DataSourceInterface interface {
+type DataSourceBasicInterface interface {
 	ClearAllData()
 	AppendData(string, string, int)
 	GetAllData() (*[]commonData.DataFlightStretch, error)

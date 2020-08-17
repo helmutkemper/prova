@@ -11,6 +11,6 @@ import "dataSourceInterface"
 //   GetAllData() (*[]commonData.DataSegment, error)
 //   GetSegmentBySourceIataCode(string) ([]commonData.DataSegment, error)
 //   GetSegmentByDestinationIataCode(string) ([]commonData.DataSegment, error)
-func (el *CSV) SetDataSource(dataSource dataSourceInterface.DataSourceInterface) {
+func (el *CSV) SetDataSource(dataSource dataSourceInterface.DataSourceBasicInterface) {
 	el.dataSource = dataSource
 }

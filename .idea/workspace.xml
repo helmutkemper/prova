@@ -19,19 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="trabalho inicial">
+    <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="DataFlightStretch, var name change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonData/typeDataSegment.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcDataToString.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcDataToString.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSaveDataSourceToFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSaveDataSourceToFile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSaveToFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSaveToFile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyFromDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyFromDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/testing/processOK_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processOK_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/newWithFieldSeparator.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/newWithFieldSeparator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testDataSource/funcAppendData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcAppendData.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testDataSource/funcClearAllData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcClearAllData.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testDataSource/funcGetAllData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcGetAllData.go" afterDir="false" />
@@ -87,7 +81,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -199,9 +193,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src/github.com/alecthomas/template" />
+      <path value="$PROJECT_DIR$/src/github.com/alecthomas/units" />
+    </ignored-roots>
     <MESSAGE value="csv revisado" />
     <MESSAGE value="trabalho inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="trabalho inicial" />
+    <MESSAGE value="DataFlightStretch, var name change" />
+    <option name="LAST_COMMIT_MESSAGE" value="DataFlightStretch, var name change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="431" y="188" key="#Notifications" timestamp="1597673872042">
@@ -232,22 +231,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597623926705" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597675855351">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597685237079">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597675855351" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597675855351">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597685237079">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597675855351" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597675855351">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597685237079">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597675855351" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597675855351">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597685237079">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597675855351" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
     <state width="1323" height="210" key="GridCell.Tab.1.bottom" timestamp="1597631647164">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -264,14 +263,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="210" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597631647164" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1597673947511">
+    <state x="184" y="9" key="SettingsEditor" timestamp="1597685126617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597673947511" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597631425600">
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597685126617" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597676069156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597631425600" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597676069156" />
     <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597668577755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

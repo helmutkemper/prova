@@ -1,14 +1,14 @@
 package factoryFlightStretch
 
 import (
-  "dataSourceInterface"
-  "importFlightStretch"
+	"dataSourceInterface"
+	"importFlightStretch"
 )
 
-func NewWithFieldSeparator(fieldSeparator string, dataSource dataSourceInterface.DataSourceInterface) (pointer *importFlightStretch.CSV) {
-  pointer = &importFlightStretch.CSV{}
-  pointer.SetDataSource(dataSource)
-  pointer.SetFieldSeparator(fieldSeparator)
+func NewWithFieldSeparator(fieldSeparator string, dataSource dataSourceInterface.DataSourceBasicInterface) (pointer *importFlightStretch.CSV) {
+	pointer = &importFlightStretch.CSV{}
+	pointer.SetDataSource(dataSource)
+	pointer.SetFieldSeparator(fieldSeparator)
 
-  return
+	return
 }

@@ -6,6 +6,9 @@ import (
 )
 
 func (el *TestDataSource) GetSegmentBySourceIataCode(value string) (data []commonData.DataFlightStretch, err error) {
+	el.mutex.Lock()
+	defer el.mutex.Unlock()
+
 	data = make([]commonData.DataFlightStretch, 0)
 
 	for _, line := range el.data {
