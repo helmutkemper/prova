@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="" />
+    <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/funcGetErrorList_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSaveDataSourceToFile_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processErrorFile1_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processErrorFile2_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processErrorFile3_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processErrorFile4_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processErrorFile5_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processOK_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcClearErrorList.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcClearErrorList.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcDataToString.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcDataToString.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcFileToDataSourceAppend.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcFileToDataSourceAppend.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcGetErrorList.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcGetErrorList.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLineToData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLineToData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppend.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSaveDataSourceToFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSaveDataSourceToFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSaveToFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSaveToFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSetFieldSeparator.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSetFieldSeparator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyFromDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyFromDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyFromFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyFromFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyRules.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcVerifyRules.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/testing/all_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/testing/lixo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +45,9 @@
     </option>
   </component>
   <component name="GOROOT" path="C:\Users\helmut.kemper.CS\go\go1.14.3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="urls">
       <list>
@@ -23,6 +56,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1gA4wyULMf0HsuaTsDXarTeyTRu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,7 +70,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/csv/testing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/importFlightStretch/testing" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,27 +88,60 @@
       <recent name="C:\Users\helmut.kemper.CS\Desktop\trabalho\prova\src\csv" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test in csv/testing (1)">
-    <configuration name="Test in csv/testing (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.ExampleCSV_SaveDataSourceToFile in importFlightStretch">
+    <configuration name="ExampleCSV_ClearDataSourceAndLoadFile in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
-      <working_directory value="$PROJECT_DIR$/src/csv/testing" />
+      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="csv/testing" />
+      <package value="importFlightStretch" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^Test$" />
+      <pattern value="^ExampleCSV_ClearDataSourceAndLoadFile$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test in csv/testing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleCSV_GetErrorList in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
-      <working_directory value="$PROJECT_DIR$/src/csv/testing" />
+      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="csv/testing" />
+      <package value="importFlightStretch" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^Test$" />
+      <pattern value="^ExampleCSV_GetErrorList$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleCSV_LoadFileAndAppendToDataSource in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="prova" />
+      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="importFlightStretch" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^ExampleCSV_LoadFileAndAppendToDataSource$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleCSV_SaveDataSourceToFile in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="prova" />
+      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="importFlightStretch" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^ExampleCSV_SaveDataSourceToFile$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test.* in importFlightStretch/testing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="prova" />
+      <working_directory value="$PROJECT_DIR$/src/importFlightStretch/testing" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="importFlightStretch/testing" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^Test.*$" />
       <method v="2" />
     </configuration>
     <configuration name="go test prova" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
@@ -89,13 +156,19 @@
     </configuration>
     <list>
       <item itemvalue="Go Test.go test prova" />
-      <item itemvalue="Go Test.Test in csv/testing" />
-      <item itemvalue="Go Test.Test in csv/testing (1)" />
+      <item itemvalue="Go Test.Test.* in importFlightStretch/testing" />
+      <item itemvalue="Go Test.ExampleCSV_ClearDataSourceAndLoadFile in importFlightStretch" />
+      <item itemvalue="Go Test.ExampleCSV_GetErrorList in importFlightStretch" />
+      <item itemvalue="Go Test.ExampleCSV_LoadFileAndAppendToDataSource in importFlightStretch" />
+      <item itemvalue="Go Test.ExampleCSV_SaveDataSourceToFile in importFlightStretch" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test in csv/testing (1)" />
-        <item itemvalue="Go Test.Test in csv/testing" />
+        <item itemvalue="Go Test.ExampleCSV_SaveDataSourceToFile in importFlightStretch" />
+        <item itemvalue="Go Test.ExampleCSV_LoadFileAndAppendToDataSource in importFlightStretch" />
+        <item itemvalue="Go Test.ExampleCSV_GetErrorList in importFlightStretch" />
+        <item itemvalue="Go Test.ExampleCSV_ClearDataSourceAndLoadFile in importFlightStretch" />
+        <item itemvalue="Go Test.Test.* in importFlightStretch/testing" />
       </list>
     </recent_temporary>
   </component>
@@ -104,10 +177,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597544341529">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597624855632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1597544341529" />
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1597624855632" />
     <state x="466" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1597548834735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -116,26 +189,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="575" height="451" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597621933268" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597544434212">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597624671628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597544434212" />
-    <state width="1323" height="210" key="GridCell.Tab.0.bottom" timestamp="1597622145225">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597624671628" />
+    <state x="561" y="262" key="Github.ShareDialog" timestamp="1597623918222">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597622145225" />
-    <state width="1323" height="210" key="GridCell.Tab.0.center" timestamp="1597622145225">
+    <state x="561" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1597623918222" />
+    <state x="463" y="69" key="Github.UntrackedFilesDialog" timestamp="1597623926705">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597622145225" />
-    <state width="1323" height="210" key="GridCell.Tab.0.left" timestamp="1597622145225">
+    <state x="463" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597623926705" />
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597630147890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597622145225" />
-    <state width="1323" height="210" key="GridCell.Tab.0.right" timestamp="1597622145225">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597630147890" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597630147890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597622145225" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597630147890" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597630147890">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597630147890" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597630147890">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597630147890" />
     <state width="1323" height="210" key="GridCell.Tab.1.bottom" timestamp="1597622145225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -160,6 +241,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1597551499219" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597624230823">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1597624230823" />
     <state x="263" y="19" key="editAsTableFormatDialogDimension" timestamp="1597546901773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -173,8 +258,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/csv/testing/all_test.go</url>
-          <line>273</line>
+          <url>file://$PROJECT_DIR$/src/importFlightStretch/testing/all_test.go</url>
+          <line>271</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>

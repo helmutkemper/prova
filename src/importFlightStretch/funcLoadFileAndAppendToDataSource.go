@@ -2,8 +2,9 @@ package importFlightStretch
 
 import "os"
 
-// Apaga todos os dados e carrega um novo arquivo após verificação de erro.
-func (el *CSV) ClearDataSourceAndLoadFile(filePath string) (err error) {
+// Carrega o arquivo CSV e adiciona a fonte de dados, após verificação.
+//   Atenção: Esta função não tem a responsabilidade de verificar dados repetidos.
+func (el *CSV) LoadFileAndAppendToDataSource(filePath string) (err error) {
 	var filePointer *os.File
 
 	el.clearErrorList()
@@ -16,8 +17,6 @@ func (el *CSV) ClearDataSourceAndLoadFile(filePath string) (err error) {
 	if err != nil {
 		return
 	}
-
-	el.dataSource.ClearAllData()
 
 	filePointer, err = el.loadFile(filePath)
 	if err != nil {
