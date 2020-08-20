@@ -1,8 +1,11 @@
 package flightSuggestion
 
-import "sort"
+import (
+	"errors"
+	"sort"
+)
 
-func (el *FlightSuggestion) deleteKeyByList(deleteList []int) {
+func (el *FlightSuggestion) deleteKeyByList(deleteList []int) (err error) {
 	if len(el.list) == 0 {
 		return
 	}
@@ -11,8 +14,25 @@ func (el *FlightSuggestion) deleteKeyByList(deleteList []int) {
 		return
 	}
 
-	sort.Sort(sort.Reverse(sort.IntSlice(deleteList)))
-	for _, deleteKey := range deleteList {
-		el.deleteKey(deleteKey)
+	for _, keyToDelete := range deleteList {
+		if keyToDelete < 0 {
+			err = errors.New("key must be a positive number")
+			return
+		}
+
+		if keyToDelete >= len(el.list) {
+			err = errors.New("key not found")
+			return
+		}
 	}
+
+	sort.Sort(sort.Reverse(sort.IntSlice(deleteList)))
+	for _, keyToDelete := range deleteList {
+		err = el.deleteKey(keyToDelete)
+		if err != nil {
+			return
+		}
+	}
+
+	return
 }

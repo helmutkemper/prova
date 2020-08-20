@@ -6,6 +6,8 @@ import (
 )
 
 func TestFlightSuggestion_deleteKey(t *testing.T) {
+	var err error
+
 	flObj := FlightSuggestion{}
 	flObj.list = []Route{
 		{
@@ -39,7 +41,23 @@ func TestFlightSuggestion_deleteKey(t *testing.T) {
 			price: 2,
 		},
 	}
-	flObj.deleteKey(0)
+	err = flObj.deleteKey(100)
+	if err == nil || err.Error() != "key not found" {
+		t.Fail()
+		panic(nil)
+	}
+
+	err = flObj.deleteKey(-1)
+	if err == nil || err.Error() != "key must be a positive number" {
+		t.Fail()
+		panic(nil)
+	}
+
+	err = flObj.deleteKey(0)
+	if err != nil {
+		t.Fail()
+		panic(err)
+	}
 
 	if flObj.list[0].route[0].Origin != "baa" ||
 		flObj.list[0].route[0].Destination != "bab" ||

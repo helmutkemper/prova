@@ -3,9 +3,15 @@ package flightSuggestion
 import "errors"
 
 //todo: recalcular valores
+//todo: verificar chave negativa
 func (el *Route) deleteByKey(keyToDelete int) (err error) {
 	if len(el.route) == 0 {
 		err = errors.New("route is empty")
+		return
+	}
+
+	if keyToDelete < 0 {
+		err = errors.New("key must be a positive number")
 		return
 	}
 
@@ -15,6 +21,7 @@ func (el *Route) deleteByKey(keyToDelete int) (err error) {
 	}
 
 	el.route = append(el.route[:keyToDelete], el.route[keyToDelete+1:]...)
+	el.recalculateTotalPrice()
 
 	return
 }

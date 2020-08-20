@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestRoute_deleteByKey(t *testing.T) {
+func TestRoute_deleteByKeyList(t *testing.T) {
 	var err error
 
 	rlObjA := Route{
@@ -29,19 +29,19 @@ func TestRoute_deleteByKey(t *testing.T) {
 		price: 3,
 	}
 
-	err = rlObjA.deleteByKey(100)
+	err = rlObjA.deleteByKeyList([]int{0, 1, 100})
 	if err == nil || err.Error() != "key not found" {
 		t.Fail()
 		panic(nil)
 	}
 
-	err = rlObjA.deleteByKey(-100)
+	err = rlObjA.deleteByKeyList([]int{0, 1, -100})
 	if err == nil || err.Error() != "key must be a positive number" {
 		t.Fail()
 		panic(nil)
 	}
 
-	err = rlObjA.deleteByKey(1)
+	err = rlObjA.deleteByKeyList([]int{1})
 	if err != nil {
 		t.Fail()
 		panic(nil)

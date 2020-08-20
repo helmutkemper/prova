@@ -1,10 +1,24 @@
 package flightSuggestion
 
+import "errors"
+
 //todo: limite das chaves
-func (el *FlightSuggestion) deleteKey(deleteKey int) {
+func (el *FlightSuggestion) deleteKey(keyToDelete int) (err error) {
 	if len(el.list) == 0 {
 		return
 	}
 
-	el.list = append(el.list[:deleteKey], el.list[deleteKey+1:]...)
+	if keyToDelete < 0 {
+		err = errors.New("key must be a positive number")
+		return
+	}
+
+	if keyToDelete >= len(el.list) {
+		err = errors.New("key not found")
+		return
+	}
+
+	el.list = append(el.list[:keyToDelete], el.list[keyToDelete+1:]...)
+
+	return
 }
