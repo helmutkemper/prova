@@ -2,6 +2,11 @@ package flightSuggestion
 
 import "commonData"
 
+// adiciona um nov trecho a uma rota caso não haja erros
+//   origin:        aeroporto de origem no formato IATA, um código de três letras maiúsculas usado para definir os aeroportos pelo mundo
+//   destination:   aeroporto de destino no formato IATA, um código de três letras maiúsculas usado para definir os aeroportos pelo mundo
+//   price:         preço do trecho conforme commonData.Price()
+//   err:           erro no padrão Golang
 func (el *Route) Add(origin, destination string, price commonData.Price) (err error) {
 	err = el.testRules(origin, destination)
 	if err != nil {

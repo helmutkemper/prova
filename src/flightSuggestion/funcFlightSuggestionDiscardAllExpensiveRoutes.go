@@ -1,6 +1,8 @@
 package flightSuggestion
 
-func (el *FlightSuggestion) discardAllExpensiveRoutes() {
+// Calcula o valor total de todas as rotas contidas na lista e deixa apenas a mais barata
+//   Cuidado: Não há regra de rota fechada
+func (el *FlightSuggestion) discardAllExpensiveRoutes() (err error) {
 	if len(el.list) <= 1 {
 		return
 	}
@@ -15,5 +17,6 @@ func (el *FlightSuggestion) discardAllExpensiveRoutes() {
 		}
 	}
 
-	el.deleteKeyByList(deleteList)
+	err = el.deleteKeyByList(deleteList)
+	return
 }

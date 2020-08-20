@@ -6,6 +6,8 @@ import (
 )
 
 func TestFlightSuggestion_popCompleteRoutes(t *testing.T) {
+	var err error
+
 	cptObj := FlightSuggestion{}
 
 	flObj := FlightSuggestion{}
@@ -61,7 +63,12 @@ func TestFlightSuggestion_popCompleteRoutes(t *testing.T) {
 			price: 2,
 		},
 	}
-	cptObj = flObj.popCompleteRoutes("aaa", "aad")
+	cptObj, err = flObj.popCompleteRoutes("aaa", "aad")
+	if err != nil {
+		t.Fail()
+		panic(err)
+	}
+
 	if len(cptObj.list) != 1 {
 		t.Fail()
 		panic(nil)

@@ -2,7 +2,8 @@ package flightSuggestion
 
 import "errors"
 
-//todo: limite das chaves
+// Apaga uma rota pelo valor da chave
+//   keyToDelete: valor inteiro positivo
 func (el *FlightSuggestion) deleteKey(keyToDelete int) (err error) {
 	if len(el.list) == 0 {
 		return

@@ -5,6 +5,8 @@ import (
 	"sort"
 )
 
+// Apaga rotas baseados em uma lista
+//   deleteList: lista de inteiro positivo
 func (el *FlightSuggestion) deleteKeyByList(deleteList []int) (err error) {
 	if len(el.list) == 0 {
 		return

@@ -6,7 +6,7 @@ import "errors"
 //todo: verificar chave negativa
 func (el *Route) deleteByKey(keyToDelete int) (err error) {
 	if len(el.route) == 0 {
-		err = errors.New("route is empty")
+		err = errors.New("Route is empty")
 		return
 	}
 

@@ -8,7 +8,7 @@ import (
 
 func (el *FlightSuggestion) calculatesTheCheapestRouteKey() (cheapestKey int, err error) {
 	if len(el.list) == 0 {
-		err = errors.New("route list is empty")
+		err = errors.New("Route list is empty")
 		return
 	}
 

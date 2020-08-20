@@ -7,7 +7,7 @@ import (
 
 func (el *Route) deleteByKeyList(listKeysToDelete []int) (err error) {
 	if len(el.route) == 0 {
-		err = errors.New("route is empty")
+		err = errors.New("Route is empty")
 		return
 	}
 
