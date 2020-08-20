@@ -1,12 +1,13 @@
 package importFlightStretch
 
 import (
+	"commonData"
 	"errors"
 	"strconv"
 	"strings"
 )
 
-func (el *CSV) lineToData(lineRawContent string) (origin, destination string, price int, err error) {
+func (el *CSV) lineToData(lineRawContent string) (origin, destination string, price commonData.Price, err error) {
 
 	var priceInt64 int64
 	var lineProcessedContent = strings.Split(lineRawContent, el.fieldSeparator)
@@ -24,7 +25,7 @@ func (el *CSV) lineToData(lineRawContent string) (origin, destination string, pr
 	if err != nil {
 		return
 	}
-	price = int(priceInt64)
+	price = commonData.Price(priceInt64)
 
 	return
 }

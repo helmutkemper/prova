@@ -1,11 +1,14 @@
 package importFlightStretch
 
-import "errors"
+import (
+	"commonData"
+	"errors"
+)
 
 // view-source:https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv
 
 // Verifica as regras para IATA Code e preço positivo
-func (el *CSV) verifyRules(origin, destination string, price int) (errorList []error) {
+func (el *CSV) verifyRules(origin, destination string, price commonData.Price) (errorList []error) {
 	errorList = make([]error, 0)
 	var err error
 

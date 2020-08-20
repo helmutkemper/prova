@@ -2,6 +2,7 @@ package importFlightStretch
 
 import (
 	"bufio"
+	"commonData"
 	"errors"
 	"os"
 	"strconv"
@@ -15,7 +16,7 @@ func (el *CSV) verifyFromFile(filePointer *os.File) (err error) {
 	var errorFoundList []error
 	var origin string
 	var destination string
-	var price int
+	var price commonData.Price
 
 	scanner = bufio.NewScanner(filePointer)
 	for scanner.Scan() {

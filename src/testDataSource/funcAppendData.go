@@ -2,7 +2,7 @@ package testDataSource
 
 import "commonData"
 
-func (el *TestDataSource) AppendData(source, destination string, price int) {
+func (el *TestDataSource) AppendData(source, destination string, price commonData.Price) {
 	el.mutex.Lock()
 	defer el.mutex.Unlock()
 

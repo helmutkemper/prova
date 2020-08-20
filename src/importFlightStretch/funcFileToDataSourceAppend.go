@@ -2,6 +2,7 @@ package importFlightStretch
 
 import (
 	"bufio"
+	"commonData"
 	"os"
 )
 
@@ -12,7 +13,7 @@ func (el *CSV) fileToDataSourceAppend(filePointer *os.File) (err error) {
 	var lineRawContent string
 	var origin string
 	var destination string
-	var price int
+	var price commonData.Price
 
 	scanner = bufio.NewScanner(filePointer)
 	for scanner.Scan() {
