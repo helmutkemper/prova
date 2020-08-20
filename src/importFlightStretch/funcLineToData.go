@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// converte uma linha CSV em dados para serem processados
 func (el *CSV) lineToData(lineRawContent string) (origin, destination string, price commonData.Price, err error) {
 
 	var priceInt64 int64

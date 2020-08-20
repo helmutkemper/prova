@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// salva o arquivo CSV
 func (el *CSV) saveToFile(filePath string) (err error) {
 	var filePointer *os.File
 	var dataSource *[]commonData.DataFlightStretch

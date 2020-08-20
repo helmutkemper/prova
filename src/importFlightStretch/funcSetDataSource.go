@@ -10,7 +10,6 @@ import "dataSourceInterface"
 //   AppendData(string, string, int)
 //   GetAllData() (*[]commonData.DataSegment, error)
 //   GetFlightStretchBySourceIataCode(string) ([]commonData.DataSegment, error)
-//   GetFlightStretchByDestinationIataCode(string) ([]commonData.DataSegment, error)
 func (el *CSV) SetDataSource(dataSource dataSourceInterface.DataSourceBasicInterface) {
 	el.dataSource = dataSource
 }
