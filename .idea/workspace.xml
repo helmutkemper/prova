@@ -19,19 +19,57 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="DataFlightStretch, var name change">
+    <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="sync mutex">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionAddAnotherRouteList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionAddAnotherRouteList_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionAddRoute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionAddRoute_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionCalculatesTheCheapestRouteKey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionCalculatesTheCheapestRouteKey_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionCopyRouteAndAddFlightStretch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionCopyRouteAndAddFlightStretch_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDeleteByReference.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDeleteByReference_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDeleteKey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDeleteKeyByList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDiscardAllExpensiveRoutes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionGetLength.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionGetList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionInitNewRoute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionPopCompleteRoutes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteAdd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteAdd_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteCopy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteDeleteByKey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteDeleteByKeyList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteGetLastDestinationInThisRoute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteGetPrice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteGetRoute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteGetRouteLength.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteIsThisRouteComplete.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteTestRules.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteTestRulesGapsInRoute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteTestRulesRoutInfiniteLoop.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteThisRouteIsTheCheapest.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/typeFlightSuggestion.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/typeRoue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testDataSource/deleteFromSlice_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testDataSource/funcFindFlightStretch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/newWithFieldSeparator.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/newWithFieldSeparator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/testing/processOK_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/testing/processOK_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testDataSource/funcAppendData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcAppendData.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testDataSource/funcClearAllData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcClearAllData.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testDataSource/funcGetAllData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcGetAllData.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testDataSource/funcGetSegmentByDestinationIataCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcGetSegmentByDestinationIataCode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testDataSource/funcGetSegmentBySourceIataCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcGetSegmentBySourceIataCode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testDataSource/typeTestDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/typeTestDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testDataSource/funcGetSegmentByDestinationIataCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcGetFlightStretchByDestinationIataCode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testDataSource/funcGetSegmentBySourceIataCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcGetFlightStretchByOriginIataCode.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +87,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
     <option name="urls">
@@ -64,9 +105,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
@@ -81,98 +124,81 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\helmut.kemper.CS\Desktop\trabalho\prova\src\csv\testing" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\helmut.kemper.CS\Desktop\trabalho\prova\src\routList" />
       <recent name="C:\Users\helmut.kemper.CS\Desktop\trabalho\prova\src\csv\testing" />
       <recent name="C:\Users\helmut.kemper.CS\Desktop\trabalho\prova\src\csv" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\helmut.kemper.CS\Desktop\trabalho\prova\src\csv\testing" />
+    </key>
   </component>
-  <component name="RunManager" selected="Go Test.ExampleCSV_SaveDataSourceToFile in importFlightStretch">
-    <configuration name="ExampleCSV_ClearDataSourceAndLoadFile in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestFlightSuggestion_deleteByReference in flightSuggestion">
+    <configuration name="TestFlightSuggestion_addRoute in flightSuggestion" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
-      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
+      <working_directory value="$PROJECT_DIR$/src/flightSuggestion" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="importFlightStretch" />
+      <package value="flightSuggestion" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^ExampleCSV_ClearDataSourceAndLoadFile$" />
+      <pattern value="^\QTestFlightSuggestion_addRoute\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleCSV_GetErrorList in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFlightSuggestion_calculatesTheCheapestRouteKey in flightSuggestion" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
-      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
+      <working_directory value="$PROJECT_DIR$/src/flightSuggestion" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="importFlightStretch" />
+      <package value="flightSuggestion" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^ExampleCSV_GetErrorList$" />
+      <pattern value="^\QTestFlightSuggestion_calculatesTheCheapestRouteKey\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleCSV_LoadFileAndAppendToDataSource in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFlightSuggestion_copyRouteAndAddFlightStretch in flightSuggestion (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
-      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
+      <working_directory value="$PROJECT_DIR$/src/flightSuggestion" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="importFlightStretch" />
+      <package value="flightSuggestion" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^ExampleCSV_LoadFileAndAppendToDataSource$" />
+      <pattern value="^\QTestFlightSuggestion_copyRouteAndAddFlightStretch\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleCSV_SaveDataSourceToFile in importFlightStretch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFlightSuggestion_copyRouteAndAddFlightStretch in flightSuggestion" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
-      <working_directory value="$PROJECT_DIR$/src/importFlightStretch" />
+      <working_directory value="$PROJECT_DIR$/src/flightSuggestion" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="importFlightStretch" />
+      <package value="flightSuggestion" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^ExampleCSV_SaveDataSourceToFile$" />
+      <pattern value="^\QTestFlightSuggestion_copyRouteAndAddFlightStretch\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test.* in importFlightStretch/testing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFlightSuggestion_deleteByReference in flightSuggestion" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
-      <working_directory value="$PROJECT_DIR$/src/importFlightStretch/testing" />
+      <working_directory value="$PROJECT_DIR$/src/flightSuggestion" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="importFlightStretch/testing" />
+      <package value="flightSuggestion" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^Test.*$" />
+      <pattern value="^\QTestFlightSuggestion_deleteByReference\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test prova" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
-      <module name="prova" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Go Test.go test prova" />
-      <item itemvalue="Go Test.Test.* in importFlightStretch/testing" />
-      <item itemvalue="Go Test.ExampleCSV_ClearDataSourceAndLoadFile in importFlightStretch" />
-      <item itemvalue="Go Test.ExampleCSV_GetErrorList in importFlightStretch" />
-      <item itemvalue="Go Test.ExampleCSV_LoadFileAndAppendToDataSource in importFlightStretch" />
-      <item itemvalue="Go Test.ExampleCSV_SaveDataSourceToFile in importFlightStretch" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.ExampleCSV_SaveDataSourceToFile in importFlightStretch" />
-        <item itemvalue="Go Test.ExampleCSV_LoadFileAndAppendToDataSource in importFlightStretch" />
-        <item itemvalue="Go Test.ExampleCSV_GetErrorList in importFlightStretch" />
-        <item itemvalue="Go Test.ExampleCSV_ClearDataSourceAndLoadFile in importFlightStretch" />
-        <item itemvalue="Go Test.Test.* in importFlightStretch/testing" />
+        <item itemvalue="Go Test.TestFlightSuggestion_deleteByReference in flightSuggestion" />
+        <item itemvalue="Go Test.TestFlightSuggestion_copyRouteAndAddFlightStretch in flightSuggestion (1)" />
+        <item itemvalue="Go Test.TestFlightSuggestion_copyRouteAndAddFlightStretch in flightSuggestion" />
+        <item itemvalue="Go Test.TestFlightSuggestion_calculatesTheCheapestRouteKey in flightSuggestion" />
+        <item itemvalue="Go Test.TestFlightSuggestion_addRoute in flightSuggestion" />
       </list>
     </recent_temporary>
   </component>
@@ -200,25 +226,30 @@
     <MESSAGE value="csv revisado" />
     <MESSAGE value="trabalho inicial" />
     <MESSAGE value="DataFlightStretch, var name change" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataFlightStretch, var name change" />
+    <MESSAGE value="sync mutex" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync mutex" />
   </component>
   <component name="WindowStateProjectService">
     <state x="431" y="188" key="#Notifications" timestamp="1597673872042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="431" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1597673872042" />
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597624855632">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597879794225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1597624855632" />
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1597879794225" />
     <state x="466" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1597548834735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597548834735" />
-    <state width="575" height="451" key="DebuggerActiveHint" timestamp="1597621933268">
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1597839443887">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="575" height="451" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597621933268" />
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1597839443887" />
+    <state width="688" height="451" key="DebuggerActiveHint" timestamp="1597886136547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="688" height="451" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597886136547" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597624671628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -231,50 +262,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597623926705" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597685237079">
+    <state width="1323" height="146" key="GridCell.Tab.0.bottom" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597685237079">
+    <state width="1323" height="146" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state width="1323" height="146" key="GridCell.Tab.0.center" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597685237079">
+    <state width="1323" height="146" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state width="1323" height="146" key="GridCell.Tab.0.left" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597685237079">
+    <state width="1323" height="146" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state width="1323" height="146" key="GridCell.Tab.0.right" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597685237079" />
-    <state width="1323" height="210" key="GridCell.Tab.1.bottom" timestamp="1597631647164">
+    <state width="1323" height="146" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597631647164" />
-    <state width="1323" height="210" key="GridCell.Tab.1.center" timestamp="1597631647164">
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state width="1323" height="146" key="GridCell.Tab.1.center" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1597631647164" />
-    <state width="1323" height="210" key="GridCell.Tab.1.left" timestamp="1597631647164">
+    <state width="1323" height="146" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state width="1323" height="146" key="GridCell.Tab.1.left" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1597631647164" />
-    <state width="1323" height="210" key="GridCell.Tab.1.right" timestamp="1597631647164">
+    <state width="1323" height="146" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state width="1323" height="146" key="GridCell.Tab.1.right" timestamp="1597886250934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="210" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597631647164" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1597685126617">
+    <state width="1323" height="146" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597886250934" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1597777160879">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597685126617" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597676069156">
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597777160879" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597685750255">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597676069156" />
-    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597668577755">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597685750255" />
+    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597884937278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1597668577755" />
+    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1597884937278" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597624230823">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -295,6 +326,46 @@
           <url>file://$PROJECT_DIR$/src/importFlightStretch/testing/all_test.go</url>
           <line>271</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFindLowPriceRoute_test.go</url>
+          <line>50</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFindLowPriceRoute_test.go</url>
+          <line>44</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFindLowPriceRoute_test.go</url>
+          <line>20</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionAddRoute_test.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionCalculatesTheCheapestRouteKey_test.go</url>
+          <line>58</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionCalculatesTheCheapestRouteKey_test.go</url>
+          <line>53</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDeleteByReference_test.go</url>
+          <line>86</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDeleteByReference_test.go</url>
+          <line>59</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

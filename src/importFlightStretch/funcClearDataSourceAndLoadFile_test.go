@@ -20,7 +20,7 @@ func ExampleCSV_ClearDataSourceAndLoadFile() {
 		panic(err)
 	}
 
-	list, err = ds.GetSegmentByDestinationIataCode("BRC")
+	list, err = ds.GetFlightStretchByDestinationIataCode("BRC")
 	if err != nil {
 		panic(err)
 	}

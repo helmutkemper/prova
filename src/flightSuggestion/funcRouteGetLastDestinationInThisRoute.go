@@ -1,0 +1,12 @@
+package flightSuggestion
+
+func (el *Route) getLastDestinationInThisRoute() (destination string, found bool) {
+	if len(el.route) == 0 {
+		return
+	}
+
+	found = true
+	destination = el.route[len(el.route)-1].Destination
+
+	return
+}

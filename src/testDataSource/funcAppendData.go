@@ -13,6 +13,6 @@ func (el *TestDataSource) AppendData(source, destination string, price int) {
 	el.data = append(el.data, commonData.DataFlightStretch{
 		Origin:      source,
 		Destination: destination,
-		Price:       price,
+		Price:       commonData.Price(price),
 	})
 }

@@ -5,14 +5,14 @@ import (
 	"errors"
 )
 
-func (el *TestDataSource) GetSegmentBySourceIataCode(value string) (data []commonData.DataFlightStretch, err error) {
+func (el *TestDataSource) GetFlightStretchByDestinationIataCode(value string) (data []commonData.DataFlightStretch, err error) {
 	el.mutex.Lock()
 	defer el.mutex.Unlock()
 
 	data = make([]commonData.DataFlightStretch, 0)
 
 	for _, line := range el.data {
-		if line.Origin == value {
+		if line.Destination == value {
 			data = append(data, line)
 		}
 	}
