@@ -2,6 +2,7 @@ package flightSuggestion
 
 import "errors"
 
+//todo: recalcular valores
 func (el *Route) deleteByKey(keyToDelete int) (err error) {
 	if len(el.route) == 0 {
 		err = errors.New("route is empty")

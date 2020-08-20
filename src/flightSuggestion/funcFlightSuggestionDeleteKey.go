@@ -1,5 +1,6 @@
 package flightSuggestion
 
+//todo: limite das chaves
 func (el *FlightSuggestion) deleteKey(deleteKey int) {
 	if len(el.list) == 0 {
 		return
