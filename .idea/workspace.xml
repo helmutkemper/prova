@@ -20,15 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="trabalhando">
-      <change afterPath="$PROJECT_DIR$/src/commonData/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataSourceInterface/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testDataSource/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factoryFlightStretch/sewWithTestDataSource.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionSetDataSource.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLineToData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLineToData.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSaveToFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSaveToFile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSetDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/typeFlightSuggestion.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/typeFlightSuggestion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/typeRoue.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/typeRoue.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +78,14 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/importFlightStretch/testing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -95,7 +98,16 @@
       <recent name="C:\Users\helmut.kemper.CS\Desktop\trabalho\prova\src\csv\testing" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go">
+  <component name="RunManager" selected="Go Build.main">
+    <configuration name="main" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="prova" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <output_directory value="$PROJECT_DIR$/bin/" />
+      <method v="2" />
+    </configuration>
     <configuration name="ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
       <working_directory value="$PROJECT_DIR$/src/flightSuggestion" />
@@ -107,7 +119,7 @@
       <pattern value="^\QExampleFlightSuggestion_FindCheapestRoute\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="prova" />
       <working_directory value="$PROJECT_DIR$/src/flightSuggestion" />
       <framework value="gotest" />
@@ -151,18 +163,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.main" />
       <item itemvalue="Go Test.go" />
-      <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion" />
       <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (1)" />
       <item itemvalue="Go Test.go test importFlightStretch" />
       <item itemvalue="Go Test.TestRoute_getLastDestinationInThisRoute in flightSuggestion" />
+      <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (2)" />
         <item itemvalue="Go Test.go test importFlightStretch" />
         <item itemvalue="Go Test.TestRoute_getLastDestinationInThisRoute in flightSuggestion" />
         <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (1)" />
-        <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion" />
       </list>
     </recent_temporary>
   </component>
@@ -195,14 +208,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="trabalhando" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="389" y="135" key="#Log_Highlighting_(ideolog)" timestamp="1598039157547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="135" key="#Log_Highlighting_(ideolog)/0.0.1366.728@0.0.1366.728" timestamp="1598039157547" />
     <state x="431" y="188" key="#Notifications" timestamp="1597673872042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="431" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1597673872042" />
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597962000441">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598038669595">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1597962000441" />
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598038669595" />
     <state x="466" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1597548834735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -211,14 +228,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1597839443887" />
-    <state width="688" height="451" key="DebuggerActiveHint" timestamp="1597932836223">
+    <state width="688" height="451" key="DebuggerActiveHint" timestamp="1598038833914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="688" height="451" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597932836223" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597624671628">
+    <state width="688" height="451" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1598038833914" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1598039070589">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597624671628" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1598039070589" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1598038664218">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598038664218" />
     <state x="561" y="262" key="Github.ShareDialog" timestamp="1597623918222">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -227,54 +248,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597623926705" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597961828773">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1598052558431">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597961828773" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597961828773">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598052558431" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1598052558430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597961828773" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597961828772">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598052558430" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1598052558430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597961828772" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597961828773">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598052558430" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1598052558430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597961828773" />
-    <state width="1323" height="146" key="GridCell.Tab.1.bottom" timestamp="1597932929919">
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598052558430" />
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom" timestamp="1598038896026">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597932929919" />
-    <state width="1323" height="146" key="GridCell.Tab.1.center" timestamp="1597932929919">
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598038896026" />
+    <state width="1323" height="146" key="GridCell.Tab.1.center" timestamp="1598038896025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1597932929919" />
-    <state width="1323" height="146" key="GridCell.Tab.1.left" timestamp="1597932929919">
+    <state width="1323" height="146" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1598038896025" />
+    <state width="1323" height="146" key="GridCell.Tab.1.left" timestamp="1598038896025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1597932929919" />
-    <state width="1323" height="146" key="GridCell.Tab.1.right" timestamp="1597932929919">
+    <state width="1323" height="146" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1598038896025" />
+    <state width="1323" height="146" key="GridCell.Tab.1.right" timestamp="1598038896025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597932929919" />
+    <state width="1323" height="146" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1598038896025" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1597777160879">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597777160879" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597957757052">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597962126791">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597957757052" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597962126791" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597962000932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1597962000932" />
-    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597956878033">
+    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598051623126">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1597956878033" />
+    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1598051623126" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597624230823">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -287,10 +308,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597958835944" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597957677525">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598041773773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597957677525" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1598041773773" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

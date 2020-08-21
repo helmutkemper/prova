@@ -2,7 +2,6 @@ package flightSuggestion
 
 import (
 	"commonData"
-	"dataSourceInterface"
 	"errors"
 )
 
@@ -26,7 +25,6 @@ import (
 // Como regra das empresas onde trabalhei, panic() é usado para gerar alarmes no servidor
 // em caso de erros graves
 func (el *FlightSuggestion) FindCheapestRoute(
-	dataSource dataSourceInterface.DataSourceBasicInterface,
 	origin,
 	destination string,
 ) (
@@ -34,8 +32,8 @@ func (el *FlightSuggestion) FindCheapestRoute(
 	err error,
 ) {
 
-	if dataSource == nil {
-		err = errors.New("data source not set")
+	if el.dataSource == nil {
+		err = errors.New("data source not set. please use setDataSource() function")
 		return
 	}
 
@@ -44,7 +42,7 @@ func (el *FlightSuggestion) FindCheapestRoute(
 	var completeRoute FlightSuggestion
 	var tmpRoutes FlightSuggestion
 
-	tmpData, err = dataSource.GetFlightStretchByOriginIataCode(origin)
+	tmpData, err = el.dataSource.GetFlightStretchByOriginIataCode(origin)
 	if err != nil {
 		return
 	}
@@ -83,12 +81,12 @@ func (el *FlightSuggestion) FindCheapestRoute(
 				return
 			}
 
-			tmpData, _ = dataSource.GetFlightStretchByOriginIataCode(lastDestination)
+			tmpData, _ = el.dataSource.GetFlightStretchByOriginIataCode(lastDestination)
 			if len(tmpData) == 0 {
 				err = processingData.deleteKey(tmpProcessingKey)
 				if err != nil {
-					err = errors.New("Route.FindLowPriceRoute().error: houston we have a problem! we have a bug")
-					panic(err)
+					err = errors.New("a possible flight stretch was not found by the system")
+					return
 				}
 				continue
 			}
@@ -101,7 +99,6 @@ func (el *FlightSuggestion) FindCheapestRoute(
 			}
 			processingData.deleteByReference(&tmpProcessingRoutes)
 		}
-
 	}
 
 	var tmp = completeRoute.list

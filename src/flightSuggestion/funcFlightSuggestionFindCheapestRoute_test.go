@@ -20,6 +20,11 @@ func ExampleFlightSuggestion_FindCheapestRoute() {
 	ds.AppendData("SCL", "ORL", 20)
 
 	var rl = FlightSuggestion{}
+	cheapestRoute, err = rl.FindCheapestRoute(&ds, "GRU", "XXX")
+	if err == nil || err.Error() != "a possible flight path was not found by the system" {
+		panic(err)
+	}
+
 	cheapestRoute, err = rl.FindCheapestRoute(&ds, "GRU", "CDG")
 	if err != nil {
 		panic(err)

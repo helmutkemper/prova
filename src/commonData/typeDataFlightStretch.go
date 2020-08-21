@@ -4,6 +4,10 @@ import "strconv"
 
 type Price int
 
+func (el Price) String() (price string) {
+	return "$" + strconv.Itoa(int(el))
+}
+
 type DataFlightStretch struct {
 	Origin      string
 	Destination string
