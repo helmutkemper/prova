@@ -1,6 +1,7 @@
 package main
 
 import (
+	"dataSourceInterface"
 	"errors"
 	"factoryFlightStretch"
 	"flightSuggestion"
@@ -8,8 +9,9 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"regexp"
+	"restServer"
 	"sync"
+	"terminal"
 )
 
 func main() {
@@ -24,14 +26,18 @@ func main() {
 	}
 	defer logToFileClose()
 
+	//restServer.Server()
+
 	filePath, err = findCsvFile()
 	if err != nil {
 		fmt.Printf("Error: %v\n", err.Error())
 		os.Exit(1)
 	}
 
+	var route *flightSuggestion.Route
 	var flightSuggestionObj *flightSuggestion.FlightSuggestion
-	flightSuggestionObj, err = factoryFlightStretch.NewWithTestDataSource(filePath)
+	var dataSource dataSourceInterface.DataSourceBasicInterface
+	route, flightSuggestionObj, dataSource, err = factoryFlightStretch.NewWithTestDataSource(filePath)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		os.Exit(1)
@@ -39,72 +45,13 @@ func main() {
 	fmt.Printf("System successfully initialized\n")
 
 	wg.Add(1)
-	go func(flightSuggestionObj *flightSuggestion.FlightSuggestion) {
-		var err error
-		for {
-			err = FindRouteByTerminal(flightSuggestionObj, &wg)
-			if err != nil {
-				fmt.Printf("Error: %v\n", err)
-			}
-		}
-	}(flightSuggestionObj)
+
+	terminal.New(flightSuggestionObj)
+	go func() {
+		restServer.Server(*route, flightSuggestionObj, dataSource, 8080)
+	}()
 
 	wg.Wait()
-}
-
-func FindRouteByTerminal(flightSuggestionObj *flightSuggestion.FlightSuggestion, wg *sync.WaitGroup) (err error) {
-	var travelStringToProcess string
-	var travelRegexp *regexp.Regexp
-	var travelFlightStretch []string
-	var travelFlightStretchStart string
-	var travelFlightStretchEnd string
-
-	var cheapestRoute flightSuggestion.Route
-
-	fmt.Printf("\n\n")
-	fmt.Printf("Where do you want to travel?\n")
-	fmt.Printf("Please inform the airport of origin and destination\n")
-	fmt.Printf("Example: GRU-CDG\n")
-	_, err = fmt.Scan(&travelStringToProcess)
-	if err != nil {
-		return
-	}
-
-	if travelStringToProcess == "exit" {
-		os.Exit(0)
-	}
-
-	travelRegexp = regexp.MustCompile(`\W`)
-	travelFlightStretch = travelRegexp.Split(travelStringToProcess, -1)
-	if len(travelFlightStretch) != 2 {
-		err = errors.New("please, use origin code + '-' + destination code. example: GRU-CDG")
-		return
-	}
-
-	travelFlightStretchStart = travelFlightStretch[0]
-	travelFlightStretchEnd = travelFlightStretch[1]
-
-	if len(travelFlightStretchStart) != 3 {
-		err = errors.New("origin code must have three letters. example: GRU-CDG")
-		return
-	}
-	if len(travelFlightStretchEnd) != 3 {
-		err = errors.New("destination code must have three letters. example: GRU-CDG")
-		return
-	}
-	if travelFlightStretchStart == travelFlightStretchEnd {
-		err = errors.New("both codes are identical")
-		return
-	}
-
-	cheapestRoute, err = flightSuggestionObj.FindCheapestRoute(travelFlightStretchStart, travelFlightStretchEnd)
-	if err != nil {
-		return
-	} else {
-		fmt.Printf("Cheapest route: %v\n\n", cheapestRoute)
-	}
-
-	return
 }
 
 func findCsvFile() (filePath string, err error) {

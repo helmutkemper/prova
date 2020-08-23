@@ -24,3 +24,20 @@ func (el Route) String() (route string) {
 
 	return
 }
+
+func (el Route) GetFlightStretchRouteAsString() (route string) {
+
+	for k, v := range el.route {
+		if k == 0 {
+			route += v.Origin
+		}
+
+		route += " - " + v.Destination
+	}
+
+	return
+}
+
+func (el Route) GetFlightStretchPriceAsString() (price string) {
+	return el.price.String()
+}

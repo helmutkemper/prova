@@ -28,19 +28,19 @@ func TestRoute_testRules(t *testing.T) {
 		},
 		price: 0,
 	}
-	err = rlObj.testRules("bad", "bae")
+	err = rlObj.TestRules("bad", "bae")
 	if err != nil {
 		t.Fail()
 		panic(nil)
 	}
 
-	err = rlObj.testRules("bad", "bab")
+	err = rlObj.TestRules("bad", "bab")
 	if err == nil {
 		t.Fail()
 		panic(nil)
 	}
 
-	err = rlObj.testRules("Xad", "bae")
+	err = rlObj.TestRules("Xad", "bae")
 	if err == nil {
 		t.Fail()
 		panic(nil)

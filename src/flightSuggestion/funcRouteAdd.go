@@ -8,7 +8,7 @@ import "commonData"
 //   price:         preço do trecho conforme commonData.Price()
 //   err:           erro no padrão Golang
 func (el *Route) Add(origin, destination string, price commonData.Price) (err error) {
-	err = el.testRules(origin, destination)
+	err = el.TestRules(origin, destination)
 	if err != nil {
 		return
 	}

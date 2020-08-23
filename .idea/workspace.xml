@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="trabalhando">
-      <change afterPath="$PROJECT_DIR$/src/factoryFlightStretch/sewWithTestDataSource.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionSetDataSource.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flightSuggestion/funcTestRulesCodeRules.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/restServer/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/terminal/terminal.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionFindCheapestRoute_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/typeFlightSuggestion.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/typeFlightSuggestion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/sewWithTestDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/sewWithTestDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/funcRouteAdd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteAdd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/funcRouteTestRules.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteTestRules.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightSuggestion/funcRouteTestRules_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/funcRouteTestRules_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/flightSuggestion/typeRoue.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightSuggestion/typeRoue.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +101,7 @@
     <configuration name="main" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="prova" />
       <working_directory value="$PROJECT_DIR$" />
+      <parameters value="input-file.correct.csv" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main/main.go" />
       <directory value="$PROJECT_DIR$" />
@@ -164,17 +164,17 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.main" />
-      <item itemvalue="Go Test.go" />
       <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (1)" />
-      <item itemvalue="Go Test.go test importFlightStretch" />
-      <item itemvalue="Go Test.TestRoute_getLastDestinationInThisRoute in flightSuggestion" />
       <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (2)" />
+      <item itemvalue="Go Test.TestRoute_getLastDestinationInThisRoute in flightSuggestion" />
+      <item itemvalue="Go Test.go test importFlightStretch" />
+      <item itemvalue="Go Test.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (2)" />
         <item itemvalue="Go Test.go test importFlightStretch" />
         <item itemvalue="Go Test.TestRoute_getLastDestinationInThisRoute in flightSuggestion" />
+        <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (2)" />
         <item itemvalue="Go Test.ExampleFlightSuggestion_FindCheapestRoute in flightSuggestion (1)" />
       </list>
     </recent_temporary>
@@ -216,10 +216,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="431" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1597673872042" />
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598038669595">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598213707342">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598038669595" />
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598213707342" />
     <state x="466" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1597548834735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -228,10 +228,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1597839443887" />
-    <state width="688" height="451" key="DebuggerActiveHint" timestamp="1598038833914">
+    <state width="827" height="451" key="DebuggerActiveHint" timestamp="1598226747328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="688" height="451" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1598038833914" />
+    <state width="827" height="451" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1598226747328" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1598039070589">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -248,54 +248,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597623926705" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1598052558431">
+    <state width="1323" height="146" key="GridCell.Tab.0.bottom" timestamp="1598226807197">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598052558431" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1598052558430">
+    <state width="1323" height="146" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598226807197" />
+    <state width="1323" height="146" key="GridCell.Tab.0.center" timestamp="1598226807196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598052558430" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1598052558430">
+    <state width="1323" height="146" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598226807196" />
+    <state width="1323" height="146" key="GridCell.Tab.0.left" timestamp="1598226807196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598052558430" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1598052558430">
+    <state width="1323" height="146" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598226807196" />
+    <state width="1323" height="146" key="GridCell.Tab.0.right" timestamp="1598226807196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598052558430" />
-    <state width="1323" height="146" key="GridCell.Tab.1.bottom" timestamp="1598038896026">
+    <state width="1323" height="146" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598226807196" />
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom" timestamp="1598226807066">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598038896026" />
-    <state width="1323" height="146" key="GridCell.Tab.1.center" timestamp="1598038896025">
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598226807066" />
+    <state width="1323" height="146" key="GridCell.Tab.1.center" timestamp="1598226807066">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1598038896025" />
-    <state width="1323" height="146" key="GridCell.Tab.1.left" timestamp="1598038896025">
+    <state width="1323" height="146" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1598226807066" />
+    <state width="1323" height="146" key="GridCell.Tab.1.left" timestamp="1598226807066">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1598038896025" />
-    <state width="1323" height="146" key="GridCell.Tab.1.right" timestamp="1598038896025">
+    <state width="1323" height="146" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1598226807066" />
+    <state width="1323" height="146" key="GridCell.Tab.1.right" timestamp="1598226807066">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="146" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1598038896025" />
+    <state width="1323" height="146" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1598226807066" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1597777160879">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597777160879" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597962126791">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598052661203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597962126791" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598052661203" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1598224124763">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1598224124763" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597962000932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1597962000932" />
-    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598051623126">
+    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598219753304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1598051623126" />
+    <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1598219753304" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597624230823">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -304,10 +308,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="19" key="editAsTableFormatDialogDimension/0.0.1366.728@0.0.1366.728" timestamp="1597546901773" />
-    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1597958835944">
+    <state x="25" y="97" width="1258" height="534" key="find.popup" timestamp="1598215657982">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597958835944" />
+    <state x="25" y="97" width="1258" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598215657982" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598041773773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -380,6 +384,21 @@
           <url>file://$PROJECT_DIR$/src/flightSuggestion/funcFlightSuggestionDeleteKeyByList_test.go</url>
           <line>58</line>
           <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/restServer/api.go</url>
+          <line>128</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/restServer/api.go</url>
+          <line>97</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/restServer/api.go</url>
+          <line>30</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

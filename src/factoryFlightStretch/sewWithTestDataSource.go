@@ -7,10 +7,10 @@ import (
 	"testDataSource"
 )
 
-func NewWithTestDataSource(csvDataPath string) (flightSuggestionObj *flightSuggestion.FlightSuggestion, err error) {
+func NewWithTestDataSource(csvDataPath string) (route *flightSuggestion.Route, flightSuggestionObj *flightSuggestion.FlightSuggestion, dataSource dataSourceInterface.DataSourceBasicInterface, err error) {
+	route = &flightSuggestion.Route{}
 	flightSuggestionObj = &flightSuggestion.FlightSuggestion{}
 
-	var dataSource dataSourceInterface.DataSourceBasicInterface
 	dataSource = &testDataSource.TestDataSource{}
 
 	var csv importFlightStretch.CSV
