@@ -2,16 +2,15 @@ package main
 
 import (
 	"dataSourceInterface"
-	"errors"
 	"factoryFlightStretch"
 	"flightSuggestion"
 	"fmt"
 	"log"
 	"os"
-	"path/filepath"
 	"restServer"
 	"sync"
 	"terminal"
+	"util"
 )
 
 func main() {
@@ -68,7 +67,7 @@ func findCsvFile() (filePath string, err error) {
 		fmt.Printf("Loading file: %v\n", fileName)
 	}
 
-	filePath, err = fileFindRecursively(fileName)
+	filePath, err = util.FileFindRecursively(fileName)
 	if err != nil {
 		return
 	}
@@ -95,32 +94,4 @@ func logToFileClose() {
 		fmt.Printf("Error: %v\n", err.Error())
 		os.Exit(1)
 	}
-}
-
-func fileFindRecursively(fileName string) (filePath string, err error) {
-	if _, err = os.Stat(fileName); os.IsNotExist(err) == false {
-		filePath = fileName
-		return
-	}
-
-	fileName = filepath.Base(fileName)
-	err = filepath.Walk(".",
-		func(path string, info os.FileInfo, err error) error {
-			if err != nil {
-				return err
-			}
-			if info.Name() == fileName {
-				filePath = path
-				return nil
-			}
-
-			return nil
-		},
-	)
-
-	if filePath == "" {
-		err = errors.New("file not found")
-	}
-
-	return
 }

@@ -38,23 +38,114 @@ GOPATH=C:\Users\helmut.kemper.CS\Desktop\trabalho\prova;C:\Users\helmut.kemper.C
 C:\Users\helmut.kemper.CS\go\go1.14.3\bin\go.exe test -json ./... -run "Test.*" #gosetup
 
 
+### Interface Restful
 
+Pessoal, como solicitado, foi feita uma interface restful seguindo as recomendações do 
+site [**jsonapi.org**](https://jsonapi.org/) e na minha experiência prévia com 
+desenvolvedores mobile.
 
+Chaves:
+* Error: array de string;
+* Success: booleano, true para sucesso;
+* Length: quantidade de objetos retornados;
+* Object: array de objetos
 
+Regra: todos os tipos devem ser preservados e quando uma chave não existe, ela deve ter
+o seu tipo mantido com o valor padrão para **'not set'**.
 
+Procurar a melhor rota:
 
+Entrada correta de dados:
+```url
+[GET] http://localhost:8080/api/find?org=BRC&des=CDG
+```
 
+Resposta json:
+```json
+{
+    "Error": [],
+    "Success": true,
+    "Length": 1,
+    "Object": [
+        {
+            "Price": 30,
+            "Route": "BRC - SCL - ORL - CDG"
+        }
+    ]
+}
+```
 
+Entrada incorreta de dados:
+```get
+http://localhost:8080/api/find?org=BRC&des=CD
+```
 
+Resposta json:
+```json
+{
+    "Error": [
+        "destination code must be three letters long"
+    ],
+    "Success": false,
+    "Length": 0,
+    "Object": []
+}
+```
 
+Adição de nova rora:
 
+Entrada correta de dados:
+```post
+[POST] http://localhost:8080/api/add
+```
 
+RAW post data
+```json
+{
+    "origin": "REC",
+    "destination": "FLN",
+    "price": 1
+}
+```
 
+Resposta correta
+```json
+{
+    "Error": [],
+    "Success": true,
+    "Length": 1,
+    "Object": [
+        {
+            "Price": 1,
+            "Route": "REC - FLN"
+        }
+    ]
+}
+```
 
+Entrada incorreta de dados:
+```post
+[POST] http://localhost:8080/api/add
+```
 
+RAW post data
+```json
+{
+    "origin": "RE",
+    "destination": "FLN",
+    "price": 1
+}
+```
 
-
-
-
-
+Resposta incorreta:
+```json
+{
+    "Error": [
+        "origin code must be three letters long"
+    ],
+    "Success": false,
+    "Length": 0,
+    "Object": []
+}
+```
 
