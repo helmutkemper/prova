@@ -17,4 +17,7 @@ type DataSourceBasicInterface interface {
 
 	// pega todos os trechos baseados no destino
 	GetFlightStretchByDestinationIataCode(value string) (data []commonData.DataFlightStretch, err error)
+
+	// channel de evento quando um novo dado é adicionado
+	GetEventChannel() (channel *chan bool)
 }

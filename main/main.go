@@ -36,7 +36,7 @@ func main() {
 	var route *flightSuggestion.Route
 	var flightSuggestionObj *flightSuggestion.FlightSuggestion
 	var dataSource dataSourceInterface.DataSourceBasicInterface
-	route, flightSuggestionObj, dataSource, err = factoryFlightStretch.NewWithTestDataSource(filePath)
+	route, flightSuggestionObj, dataSource, err = factoryFlightStretch.NewWithTestDataSourceAndAutoCsvSave(filePath)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		os.Exit(1)

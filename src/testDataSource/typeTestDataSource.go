@@ -8,4 +8,5 @@ import (
 type TestDataSource struct {
 	data  []commonData.DataFlightStretch
 	mutex sync.Mutex
+	Event chan bool
 }

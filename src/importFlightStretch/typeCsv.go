@@ -1,6 +1,9 @@
 package importFlightStretch
 
-import "dataSourceInterface"
+import (
+	"dataSourceInterface"
+	"sync"
+)
 
 // Este pacote importa arquivos CSV com trechos de voos e valores no seguinte formato:
 //   IATA code da origem;
@@ -19,4 +22,5 @@ type CSV struct {
 	errorList      []error
 	fieldSeparator string
 	dataSource     dataSourceInterface.DataSourceBasicInterface
+	mutex          sync.Mutex
 }

@@ -8,6 +8,9 @@ import (
 // Carrega o arquivo CSV e adiciona a fonte de dados, após verificação.
 //   Atenção: Esta função não tem a responsabilidade de verificar dados repetidos.
 func (el *CSV) LoadFileAndAppendToDataSource(filePath string) (err error) {
+	el.mutex.Lock()
+	defer el.mutex.Unlock()
+
 	var filePointer *os.File
 
 	el.clearErrorList()

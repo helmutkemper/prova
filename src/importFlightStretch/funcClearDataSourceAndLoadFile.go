@@ -7,6 +7,9 @@ import (
 
 // Apaga todos os dados e carrega um novo arquivo após verificação de erro.
 func (el *CSV) ClearDataSourceAndLoadFile(filePath string) (err error) {
+	el.mutex.Lock()
+	defer el.mutex.Unlock()
+
 	var filePointer *os.File
 
 	log.Printf("importFlightStretch.ClearDataSourceAndLoadFile(%v): start", filePath)

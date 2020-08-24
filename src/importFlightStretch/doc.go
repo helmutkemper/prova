@@ -1,6 +1,3 @@
-// Este código foi feito para o test de Helmut Kemper (helmut.kemper@gmail.com) que está
-// concorrendo a vaga de desenvolvedor Golang.
-//
 // Este pacote importa arquivos CSV com trechos de voos e valores no seguinte formato:
 //   IATA code da origem;
 //   IATA cede do destino;

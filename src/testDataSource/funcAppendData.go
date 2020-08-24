@@ -1,6 +1,8 @@
 package testDataSource
 
-import "commonData"
+import (
+	"commonData"
+)
 
 func (el *TestDataSource) AppendData(source, destination string, price commonData.Price) {
 	el.mutex.Lock()
@@ -15,4 +17,8 @@ func (el *TestDataSource) AppendData(source, destination string, price commonDat
 		Destination: destination,
 		Price:       commonData.Price(price),
 	})
+
+	if len(el.Event) == 0 {
+		el.Event <- true
+	}
 }

@@ -28,7 +28,7 @@ func TestApiFlightSuggestion_ServeHTTP(t *testing.T) {
 		panic(err)
 	}
 
-	route, flightSuggestionObj, dataSource, err = factoryFlightStretch.NewWithTestDataSource(filePath)
+	route, flightSuggestionObj, dataSource, err = factoryFlightStretch.NewWithTestDataSourceAndAutoCsvSave(filePath)
 	if err != nil {
 		t.Fail()
 		panic(err)

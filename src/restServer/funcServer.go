@@ -36,5 +36,6 @@ func Server(route flightSuggestion.Route, flightSuggestion *flightSuggestion.Fli
 		}
 		_, _ = fmt.Fprintf(w, "Welcome to the super economical airlines")
 	})
+
 	log.Fatal(http.ListenAndServe(":"+strconv.Itoa(port), mux))
 }
