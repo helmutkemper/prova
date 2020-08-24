@@ -281,6 +281,9 @@ que um alerta seja gerado no servidor, mantive este hábito nesse código.
 
 > Não havia regra para trecho de voo gratuito, então, não me preocupei.
 
+> A busca por arquivo pode fazer a atualização do CSV ser feita em arquivo diferente do que 
+> você está olhando.
+
 ```hex
 43 6f 6e 74 61 74 6f 3a 0a 4e 6f 6d 65 3a 20 48 65 6c 6d 75 74 20 4b 65 6d 70 65 72 0a 54 
 65 6c 65 66 6f 6e 65 3a 20 38 31 39 39 39 32 36 38 37 34 34 0a 45 2d 6d 61 69 6c 3a 20 20 
