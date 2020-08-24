@@ -6,9 +6,9 @@ Olá pessoal, a melhor forma de conhecer um desenvolvedor é seguir o código, e
 [Essa é a minha contribuição](https://github.com/helmutkemper/golang.solid.kiss.complexity.measure/wiki)
 a comunidade golang e fala sobre qualidade de código e dicas.
 
-Pessoal, todos os módulos deveriam ser publicados on-line para ficar dentro do padrão 
-Golang, e usar módulos, mas, achei mais fácil deixar o código em um único arquivo 
-compactado para a entrega.
+Todos os módulos deveriam ser publicados on-line para ficar dentro do padrão Golang, e 
+usar módulos, mas, achei mais fácil deixar o código em um único arquivo compactado para a 
+entrega.
 
 Como solicitado, não há frameworks, apenas códigos nativos do próprio Golang.
 
@@ -20,6 +20,15 @@ $ mysolution input-routes.csv
 
 Faz o código testar pelo arquivo **./input-routes.csv** e se não encontrar, procurar na
 árvore de diretórios. 
+
+> A pasta **src** tem que ser adicionada como libraries.
+
+```shell
+GOROOT=__PATH_TO_GO__\go1.14.3 #gosetup
+GOPATH=__PATH_TO_PROJECT__\prova #gosetup
+__PATH_TO_GO__\go1.14.3\bin\go[.exe] build -o __PATH_TO_PROJECT__\prova\main\main.[bin|exe] __PATH_TO_PROJECT__\prova\main\main.go #gosetup
+__PATH_TO_PROJECT__\prova\bin\main.[bin|exe] input-file.correct.csv #gosetup
+```
 
 Lembrando, que por uma questão de segurança, a árvore de diretórios só é vista do 
 programa para dentro, nunca para fora.
@@ -42,21 +51,21 @@ Faz o código perguntar pelo arquivo para começar.
 
 **/src/commonData**:
 
-// O tipo comum facilita a portabilidade e a mudança do código, tipo, preço pode ser
-// incrementado para outros tipos de moedas. Por exemplo, todo o sistema pode passar a
-// trabalhar com float point simplesmente mudando Price de int para float64
-// Nâo achei necessário definir origin e destination como um tipo a parte apenas para uma
-// demonstração.
+O tipo comum facilita a portabilidade e a mudança do código, tipo, preço pode ser
+incrementado para outros tipos de moedas. Por exemplo, todo o sistema pode passar a
+trabalhar com float point simplesmente mudando Price de int para float64
+Nâo achei necessário definir origin e destination como um tipo a parte apenas para uma
+demonstração.
 
 **/src/dataSourceInterface**:
 
-// a mãe da portabilidade do código orientado a objetos
-//
-// a interface de dados permite que qualquer banco de dados possa ser usado de forma
-// fácil apenas construindo pequenas funções respeitando as regras de negócios
-//
-// o grande ponto é, pequenas interfaces para grupos de funções é melhor do que uma
-// interface gigante
+a mãe da portabilidade do código orientado a objetos
+
+a interface de dados permite que qualquer banco de dados possa ser usado de forma
+fácil apenas construindo pequenas funções respeitando as regras de negócios
+
+o grande ponto é, pequenas interfaces para grupos de funções é melhor que uma
+interface gigante
 
 **/src/factoryFlightStretch**:
 
@@ -69,48 +78,48 @@ Na verdade, esqueci a funcionalidade de manter o CSV atualizado e fiz de última
 
 **/src/FlightSuggestion**:
 
-// FlightSuggestion é um pacote feito para sugerir rotas de voo baratas
-//
-// Pessoal, Na minha antiga empresa, e na atual, há um regra de colocar panic() nos erros
-// graves, assim, o servidor cai e um alarme é gerado para a equipe.
-// Minha base é programação de microcontroladores (80C51) em C e Assembley, por isto, eu
-// tenho consciência da necessidade de poupar memória e usar ponteiro.
-// Também tenho consciência de que o código pode ser colocado para rodar em um container
-// com pouca memória e o carregamento de uma lista de trechos de voo muito grandes pode
-// consumir muita memória e fazer o container travar, dependendo do limite de memória
-// para o mesmo.
-//
-// Todos os códigos são formados por funções pequenas de responsabilidade única, para que
-// o código fique mais fácil de ser entendido e seguido. Nesse ponto, eu sigo os
-// trabalhos do Uncle Bob e do Thomas J. McCabe. Também sigo a filosofia do Kiss - "Keep
-// It Stupid Simple / Keep It Simple, Stupid!" e parte do meu trabalho pode ser
-// acompanhado em
-// https://github.com/helmutkemper/golang.solid.kiss.complexity.measure/wiki
-//
-// Quanto a função flightSuggestion.FindCheapestRoute() ela ficou bem dividia e fácil de
-// ser seguida e entendida. A ideia básica é sempre usar nomes de métodos explicativos,
-// já que programadores cansados tendem a esquecer os cometários a medida que o código
-// muda.
-// Nesse ponto, detesto comentários tipo, FindCheapestRoute(), procura a rota mais
-// barata, embora, nem sempre tenha muito o que fazer.
-// Todo código deve ter nos comentários não o que o código faz, mas, porque ele faz o que
-// faz. Já tive de refatorar um código com constantes dentro dele que nem a equipe
-// original lembrava o motivo, por isto, eu sempre comento o motivo quando relevante, e
-// se o motivo for uma lei, minha antiga empresa era especializada em controle de ponto,
-// eu sempre coloco no comentário a parte relevante da lei e o link, para que isto não
-// se perca no tempo.
+FlightSuggestion é um pacote feito para sugerir rotas de voo baratas
+
+Pessoal, Na minha antiga empresa, e na atual, há um regra de colocar panic() nos erros
+graves, assim, o servidor cai e um alarme é gerado para a equipe.
+Minha base é programação de microcontroladores (80C51) em C e Assembley, por isto,
+tenho consciência da necessidade de poupar memória e usar ponteiro.
+Também tenho consciência de que o código pode ser colocado para rodar em um container
+com pouca memória e o carregamento de uma lista de trechos de voo muito grandes pode
+consumir muita memória e fazer o container travar, dependendo do limite de memória
+para o mesmo.
+
+Todos os códigos são formados por funções pequenas de responsabilidade única, para que
+o código fique mais fácil de ser entendido e seguido. Nesse ponto, sigo os
+trabalhos do Uncle Bob e do Thomas J. McCabe. Também sigo a filosofia do Kiss - "Keep
+It Stupid Simple / Keep It Simple, Stupid!" e parte do meu trabalho pode ser
+acompanhado em
+https://github.com/helmutkemper/golang.solid.kiss.complexity.measure/wiki
+
+Quanto a função flightSuggestion.FindCheapestRoute() ela ficou bem dividia e fácil de
+ser seguida e entendida. A ideia básica é sempre usar nomes de métodos explicativos,
+já que programadores cansados tendem a esquecer os cometários a medida que o código
+muda.
+Nesse ponto, detesto comentários tipo, FindCheapestRoute(), procura a rota mais
+barata, embora, nem sempre tenha muito o que fazer.
+Todo código deve ter nos comentários não o que o código faz, mas, porque ele faz o que
+faz. Já tive de refatorar um código com constantes dentro dele que nem a equipe
+original lembrava o motivo, por isto, eu sempre comento o motivo quando relevante, e
+se o motivo for uma lei, minha antiga empresa era especializada em controle de ponto,
+eu sempre coloco no comentário a parte relevante da lei e o link, para que isto não
+se perca no tempo.
 
 **/src/importFlightStretch**:
 
-// Este pacote importa arquivos CSV com trechos de voos e valores no seguinte formato:
-//   IATA code da origem;
-//   IATA cede do destino;
-//   Preço;
-//
-// Exemplo:
-//   GRU,BRC,10
-//   BRC,SCL,5
-//   GRU,CDG,75
+Este pacote importa arquivos CSV com trechos de voos e valores no seguinte formato:
+  IATA code da origem;
+  IATA cede do destino;
+  Preço;
+
+Exemplo:
+  GRU,BRC,10
+  BRC,SCL,5
+  GRU,CDG,75
 
 **/src/restServer**:
 
@@ -269,6 +278,8 @@ entregar, devido ao cansaço.
 
 Como regra dentro da Ahgora Sistemas e do Banco Neon, possíveis bugs geram panic() para
 que um alerta seja gerado no servidor, mantive este hábito nesse código. 
+
+> Não havia regra para trecho de voo gratuito, então, não me preocupei.
 
 ```hex
 43 6f 6e 74 61 74 6f 3a 0a 4e 6f 6d 65 3a 20 48 65 6c 6d 75 74 20 4b 65 6d 70 65 72 0a 54 
