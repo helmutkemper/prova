@@ -8,19 +8,7 @@ import (
 	"regexp"
 )
 
-func New(flightSuggestionObj *flightSuggestion.FlightSuggestion) {
-	go func(flightSuggestionObj *flightSuggestion.FlightSuggestion) {
-		var err error
-		for {
-			err = findRouteByTerminal(flightSuggestionObj)
-			if err != nil {
-				fmt.Printf("Error: %v\n", err)
-			}
-		}
-	}(flightSuggestionObj)
-}
-
-func findRouteByTerminal(flightSuggestionObj *flightSuggestion.FlightSuggestion) (err error) {
+func FindRouteByTerminal(flightSuggestionObj *flightSuggestion.FlightSuggestion) (err error) {
 	var travelStringToProcess string
 	var travelRegexp *regexp.Regexp
 	var travelFlightStretch []string

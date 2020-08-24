@@ -20,31 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f497ca5e-c4a1-4eb0-bb7e-c5fee16f294c" name="Default Changelist" comment="trabalhando">
-      <change afterPath="$PROJECT_DIR$/src/commonData/funcDataFlightStretchString.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commonData/funcTypeString.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commonData/typePrice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factoryTerminal/funcNew.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testDataSource/funcGetEventChannel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/toolServer/funcNew.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/toolTerminal/funcNew.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonData/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonData/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonData/typeDataFlightStretch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataSourceInterface/interfaceDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/new.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/newWithFieldSeparator.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factoryFlightStretch/sewWithTestDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/factoryFlightStretch/newWithTestDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcClearDataSourceAndLoadFile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcLoadFileAndAppendToDataSource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/funcSaveDataSourceToFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/funcSaveDataSourceToFile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/importFlightStretch/typeCsv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restServer/funcApiFlightSuggestionServeHTTP_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/restServer/funcApiFlightSuggestionServeHTTP_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restServer/funcApiRoutAddToDataServerServeHTTP_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/restServer/funcApiRoutAddToDataServerServeHTTP_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restServer/funcServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/restServer/funcServer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restServer/testing/input-file.correct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/restServer/testing/input-file.correct.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testDataSource/funcAppendData.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/funcAppendData.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testDataSource/typeTestDataSource.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDataSource/typeTestDataSource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factoryTerminal/funcNew.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/terminal/terminal.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/terminal/terminal.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,22 +264,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597623926705" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1598236607181">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1598238392221">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598236607181" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1598236607181">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598238392221" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1598238392221">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598236607181" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1598236607180">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598238392221" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1598238392220">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598236607180" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1598236607181">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598238392220" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1598238392221">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598236607181" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598238392221" />
     <state width="1323" height="146" key="GridCell.Tab.1.bottom" timestamp="1598235345006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -318,10 +300,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597777160879" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598232232148">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598237580316">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598232232148" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598237580316" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1598231783756">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

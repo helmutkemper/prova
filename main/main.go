@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"restServer"
 	"sync"
-	"terminal"
+	"toolServer"
+	"toolTerminal"
 	"util"
 )
 
@@ -45,10 +45,8 @@ func main() {
 
 	wg.Add(1)
 
-	terminal.New(flightSuggestionObj)
-	go func() {
-		restServer.Server(*route, flightSuggestionObj, dataSource, 8080)
-	}()
+	toolTerminal.New(flightSuggestionObj)
+	toolServer.New(*route, flightSuggestionObj, dataSource, 8080)
 
 	wg.Wait()
 }

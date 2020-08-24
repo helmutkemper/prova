@@ -226,20 +226,28 @@ Resposta incorreta:
 }
 ```
 
+**/src/terminal**:
 
+Módulo que possibilita o uso do terminal
 
+**/src/testDataSource:**
 
+Como não podia usar framework, implementei um banco de dados extremamente simples, o 
+suficiente para fazer o código funcionar e mais nada.
 
+**/src/tooServer**: 
 
+Roda o servidor rest como uma thread.
 
+**/src/toolTerminal**:
 
+Faz o terminal rodar como uma thread.
 
+**/src/util**:
 
+Faz a busca de arquivo pelo nome na árvore de diretórios.
 
-
-
-
-
+### Explicações
 
 Todas as funções são curtas, com responsabilidade única e têm nomes coerentes. Todos os
 retornos de funções são nomeados para deixar o entendimento do código mais claro. 
@@ -253,7 +261,7 @@ código de forma a funcionar, depois organizo, deixando possíveis melhorias par
 decidido se o esforço vale a pena.
 
 Costumo deixar as funções separadas por arquivos, pois, facilita ver quem ainda não tem 
-teste e fica mais fácil de encontrar.
+teste, além de ficar mais fácil encontrar.
 
 Estou ciente de separar os commits do git em grupos de mudanças/correções para que fique 
 fácil reverter um possível erro, mas, nesse código, a minha única preocupação foi 
@@ -262,8 +270,8 @@ entregar, devido ao cansaço.
 Como regra dentro da Ahgora Sistemas e do Banco Neon, possíveis bugs geram panic() para
 que um alerta seja gerado no servidor, mantive este hábito nesse código. 
 
-GOROOT=C:\Users\helmut.kemper.CS\go\go1.14.3 #gosetup
-GOPATH=C:\Users\helmut.kemper.CS\Desktop\trabalho\prova;C:\Users\helmut.kemper.CS\GolandProjects\Libraries #gosetup
-C:\Users\helmut.kemper.CS\go\go1.14.3\bin\go.exe test -json ./... -run "Test.*" #gosetup
-
-
+```hex
+43 6f 6e 74 61 74 6f 3a 0a 4e 6f 6d 65 3a 20 48 65 6c 6d 75 74 20 4b 65 6d 70 65 72 0a 54 
+65 6c 65 66 6f 6e 65 3a 20 38 31 39 39 39 32 36 38 37 34 34 0a 45 2d 6d 61 69 6c 3a 20 20 
+68 65 6c 6d 75 74 2e 6b 65 6d 70 65 72 40 67 6d 61 69 6c 2e 63 6f 6d
+```
